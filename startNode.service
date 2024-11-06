@@ -1,0 +1,10 @@
+[Unit]
+Description=Starts node.js server
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+ExecStart=/ec2node/start.sh
+
+[Install]
+WantedBy=default.target
