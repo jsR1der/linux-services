@@ -1,0 +1,15 @@
+[Unit]
+Description=Timer to send get request to server each 10s
+After=startNode.service
+
+[Timer]
+OnUnitActiveSec=5s
+Persistent=true
+Unit=getDateFromServer.service
+
+
+[Install]
+WantedBy=timers.target
+
+
+

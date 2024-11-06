@@ -1,0 +1,9 @@
+[Unit]
+Description=Timer to send get request to server each 10s
+
+[Service]
+ExecStart=/home/ubuntu/scripts/getDateFromServer.sh
+
+[Install]
+WantedBy=default.target
+
